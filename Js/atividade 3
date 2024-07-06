@@ -1,0 +1,12 @@
+let ano= 2000
+
+if(ano <= 1582){
+    ano=`ano bissexto`
+}else if( ano != 100 != 0){
+    ano=`ano comum`
+}else if(ano % 400 != 0){
+    ano=` ano bissexto`   
+}else{
+    ano=`ano comum`
+}
+console.log(ano)

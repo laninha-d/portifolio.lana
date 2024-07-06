@@ -1,0 +1,77 @@
+@import url('./color.css');
+@import url('./style.css');
+
+body {
+    background-color: var(--cor-3);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+}
+
+.teclado {
+    display: grid;
+    grid-template-columns: repeat(9, 5rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: 5px;
+    align-self: center;
+}
+
+.teclado p {
+    background-color: var(--cor-1);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 5px 5px 5px 0px rgba(187, 185, 185, 0.75);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.teclado div:hover {
+    -webkit-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 7px 7px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 7px 7px 5px 0px rgba(187, 185, 185, 0.75);
+    transform: scale(1.02)
+}
+
+.img-forca {
+    align-self: center;
+    justify-self: center;
+}
+
+.jogo-config {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: solid 2px black;
+    padding: 10px;
+    gap: 5px;
+
+}
+
+.jogo-config input {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.botao-iniciar {
+    color: aliceblue;
+    height: 2rem;
+    background-color: black;
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.jogo-saida {
+    align-self: center;
+    justify-self: center;
+}

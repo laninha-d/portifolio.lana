@@ -1,0 +1,13 @@
+//calculadora de imposto
+const renda=10000
+let impostos=0
+
+if( renda<= 85528){
+imposto=((renda*18)/100)-556  
+}else{
+imposto=14839+(renda-85528)*32/100
+}
+if( imposto< 0){
+    imposto=0   
+}
+console.log( `o imposto a ser pago é de r$ ${imposto.toFixed(2)}`)

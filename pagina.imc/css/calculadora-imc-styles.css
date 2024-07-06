@@ -1,0 +1,52 @@
+@import url('./style.css');
+@import url('./color.css');
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--cor-2)
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.img-principal{
+    height: 20rem;
+}
+.cartao{ 
+    background-color: var(--cor-3);
+    padding: 30px;
+ border-radius:10px;
+ display: flex;
+ flex-direction: column;
+
+}
+.cartao h2{
+    margin-bottom: 1rem;
+}
+input{
+    margin-bottom: 1rem;
+    color: var(--cor 1);
+    text-align: center;
+
+}
+.botao-calcular{
+    background-color: var(--cor-3);
+    cursor: pointer;
+}
+input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance:nome;
+}
+.resultado__num{
+    text-align: center;
+}
+.resultado__texto{
+    text-align: center;
+}
+.teste{
+    color:black;
+    text-decoration: underline;
+}

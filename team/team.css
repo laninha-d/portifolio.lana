@@ -1,0 +1,117 @@
+@import url(../color.css);
+@import url(../reset.css);
+
+header{
+    background-color:#050505;
+    padding: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: #050505;
+}
+
+.logo{
+    height: 10rem;
+    width: 10rem;
+}
+.header-navegacao{
+    display: flex;
+}
+.header-navegacao *{
+font-size:2rem;
+margin: 15px;
+color: rgb(255, 255, 255);
+}
+.header-navegacao *:hover {
+    color:#DFF5FF;
+    transform: scale(1.05);
+}
+.header-navegacao a:nth-child(1){
+    text-decoration: underline;
+}
+
+
+main {
+    background-color:rgb(0, 0, 0) ;
+}
+
+.banner {
+    width: 100%;
+    height: 70%;
+}
+
+h1 {
+    color: #DFF5FF;
+    text-align: center;
+    
+}
+
+.cursos__cartao {
+    width: 20rem;
+    height: 20rem;
+    background-color: rgb(238, 235, 221);
+    border-radius: 10px;
+    border: solid 2px rgb(253, 248, 248);
+
+}
+
+.cursos {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.cursos__cartao{
+    width: 25%;
+    height: 40vh;
+}
+
+.cursos__cartao video{
+    width: 100%;
+    height: 90%;
+}
+
+.cursos__cartao:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+    transform: scale(1.01);
+
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    padding: 6rem;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 45%, rgb(129, 0, 0) 68%);
+
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-links a {
+    color: #DFF5FF;
+}
+
+.footer-links h2 {
+    margin-bottom: 2rem;
+}
